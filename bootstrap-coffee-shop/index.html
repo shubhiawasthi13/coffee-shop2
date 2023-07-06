@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap-coffee-shop</title>
+    <!-- custom css link -->
+    <link rel="stylesheet" href="style.css">
+      <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<!-- font-awesome link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.heading{
+  font-size: 2.5rem;
+  color: rgb(87, 22, 22);
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.custom_navbar{
+background-color: #fff;
+}
+.navbar_logo{
+        margin-left: 2rem;
+    }
+ .navbar_text{
+    font-size: 1.3rem;
+    color: brown;
+    text-transform: capitalize;
+}
+.navbar_text:hover{
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(87, 22, 22);
+}
+.btn_custom{
+    background-color: brown;
+    color: white;
+}
+.btn_custom:hover{
+  cursor: pointer;
+  background-color: #fff;
+  color: brown;
+}
+.custom_img{
+  height: 500px;
+  object-fit: cover;
+}
+.custom_title{
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.custom_dec{
+font-size: 1.2rem;
+}
+.custom_icons{
+  width: 40%;
+} 
+.custom_heading{
+  font-size: 1.2rem;
+   color: rgb(87, 22, 22);
+}
+.custom-menu{
+  width: 70%;
+}
+.form{
+    border: 1px solid rgb(87, 22, 22);;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+ }
+ .form .form_heading{
+  color: rgb(87, 22, 22);
+  margin-bottom: 2rem;
+  
+ }
+ .form input{
+  display: block;
+  margin-bottom: 1rem;
+  padding: .5rem;
+  width: 100%;
+ }
+ .footer_text p{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(87, 22, 22);
+  margin: 2rem 0;
+ }
+
+ 
+</style>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top custom_navbar">
+        <div class="container-fluid">
+            <a href="#home" class="navbar-brand navbar_logo"><img src="images/icon-1.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarlist">|||</button>
+            <div class="collapse navbar-collapse  m-auto" id="navbarlist">
+                <ul class="navbar-nav navbar_menu m-auto">
+                    <li class="nav-item">
+                      <a href="#home" class="nav-link navbar_text">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link navbar_text">services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#menu" class="nav-link navbar_text">menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link navbar_text">contact</a>
+                    </li>
+                </ul>
+                <div class="custom_btn">
+                    <button class="btn btn_custom">login</button>
+                    <button class="btn btn_custom">signup</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- home section  -->
+    <section id="home">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/gallery-5.webp" class="d-block w-100 custom_img alt="...">
+                <div class="carousel-caption  d-md-block">
+                 <h1 class="display-2 custom_title">enjoy your day with fresh coffee</h1>
+                  <p class="custom_dec">Some representative placeholder content for the first slide.</p>
+                  <button class="btn btn-lg btn-outline-light btn_custom">login</button>
+                  <button class="btn btn-lg btn-outline-light btn_custom">signup</button>
+                  
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/gallery-4.webp" class="d-block w-100 custom_img" alt="...">
+                <div class="carousel-caption  d-md-block">
+                    <h1 class="display-2 custom_title">enjoy your day with fresh coffee</h1>
+                    <p class="custom_dec">Some representative placeholder content for the first slide.</p>
+                    <button class="btn btn-lg btn-outline-light btn_custom">login</button>
+                    <button class="btn btn-lg btn-outline-light btn_custom">signup</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/gallery-1.webp" class="d-block w-100 custom_img" alt="...">
+                <div class="carousel-caption  d-md-block">
+                    <h1 class="display-2 custom_title">enjoy your day with fresh coffee</h1>
+                  <p class="custom_dec">Some representative placeholder content for the first slide.</p>
+                  <button class="btn btn-lg btn-outline-light btn_custom">login</button>
+                  <button class="btn btn-lg btn-outline-light btn_custom">signup</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          </section>
+        <!-- home section end -->
+
+   <!-- services section start -->
+   <section id="services">
+    <h1 class="heading">our services</h1>
+    <dic class="container-fluid">
+      <div class="row text-center m-auto">
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <img src="images/icon-4.png" class="img-fluid custom_icons" alt="">
+        <h3 class="text-center custom_heading">Varieties Of Coffees</h3>
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, quod?</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <img src="images/icon-3.png" class="img-fluid custom_icons" alt="">
+        <h3 class="text-center custom_heading">Coffees Beans</h3>
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, quod?</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <img src="images/icon-2.png" class="img-fluid custom_icons" alt="">
+        <h3 class="text-center custom_heading">Breakfast And Sweets</h3>
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, quod?</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <img src="images/icon-1.png" class="img-fluid custom_icons" alt="">
+        <h3 class="text-center custom_heading">Read To Go Coffee</h3>
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, quod?</p>
+      </div>
+        </div>
+      </div>
+    </div>
+   </section>
+     <!-- services section end -->
+    
+     
+   <!-- menu section start -->
+   <section id="menu">
+    <div class="container">
+      <h1 class="heading">our menu</h1>
+      <div class="row text-center m-auto">
+       <div class="col-xs-12 col-sm-6 col-md-4">
+        <img src="images/menu-1.png" class="img-fluid custom-menu" alt="">
+        <h5 class="text-center custom_heading">Love You Coffee</h5>
+       </div>
+       <div class="col-xs-12 col-sm-6 col-md-4">
+        <img src="images/menu-2.png" class="img-fluid custom-menu" alt="">
+        <h5 class="text-center custom_heading">Cappuccino</h5>
+       </div>
+       <div class="col-xs-12 col-sm-6 col-md-4">
+        <img src="images/menu-3.png" class="img-fluid custom-menu" alt="">
+        <h5 class="text-center custom_heading">Mocha Coffee</h5>
+       </div>
+       <div class="col-xs-12 col-sm-6 col-md-4">
+        <img src="images/menu-4.png" class="img-fluid custom-menu" alt="">
+        <h5 class="text-center custom_heading">Frappuccino</h5>
+       </div>
+       <div class="col-xs-12 col-sm-6 col-md-4">
+        <img src="images/menu-5.png" class="img-fluid custom-menu" alt="">
+        \<h5 class="text-center custom_heading">Black Coffee</h5>
+       </div>
+       <div class="col-xs-12 col-sm-6 col-md-4">
+        <img src="images/menu-6.png" class="img-fluid custom-menu" alt="">
+        <h5 class="text-center custom_heading">Love Heart Coffee</h5>
+       </div>
+      </div>
+    </div>
+   </section>
+   <!-- menu section end -->
+
+    <!-- contact section start -->
+    <section id="contact">
+    <div class="container-fluid">
+      <h1 class="heading">contact us</h1>
+      <div class="row text-center m-auto">
+        <div class="col-xl-6 col-md-6">
+          <img src="images/contact-img.svg" alt="" class="img-fluid custom_conatct_img">
+        </div>
+        <div class="col-xl-6 col-md-6">
+          <form action="" method="post" class="form">
+            <h3 class="form_heading">book a table</h3>
+            <div class="form_input">
+            <input type="text"  name="name" required class="box" maxlength="20" placeholder="enter you name">
+            <input type="number" name="number" required class="box" maxlength="20" placeholder="enter you number" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false">
+            <input type="number"   name="guests" required class="box" maxlength="20" placeholder="how many guests" min="0" max="99" onkeypress="if(this.value.length == 2) return false">
+           <input type="submit" value="send message" class="btn_custom border-0">
+          </div>
+          </form>
+        
+        </div>
+      </div>
+    </div>
+    </section>
+     <!-- contact section end -->
+     <hr>
+     <footer class="text-center footer_text">
+     <p> © Copyright @ 2022 By Miss Shubhi Awasthi | All Rights Reserved!</p>
+     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
